@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vision3D - Neural Interface</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: #020202;
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+    #video-container {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 180px;
+      height: 135px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(59, 130, 246, 0.2);
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+      z-index: 50;
+      transform: scaleX(-1);
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .video-active {
+      border-color: rgba(59, 130, 246, 0.6) !important;
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.3) !important;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "three": "https://esm.sh/three@^0.182.0"
+  }
+}
+</script>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>

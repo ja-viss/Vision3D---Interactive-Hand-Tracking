@@ -1,0 +1,7 @@
+{
+  "name": "Vision3D - Interactive Hand Tracking",
+  "description": "A high-performance 3D interaction app using MediaPipe Hands and Three.js to control objects with your fingers in real-time.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
